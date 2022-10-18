@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(194, 188, 188);
+}
+.conteudos{
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    min-width: 500px;
+    min-height: 250px;
+    background-color: rgb(40, 122, 189);
+}
+.campoCep{
+    margin: 10px;
+    padding: 10px;
+}
+
+.input-texto{
+    border: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    background-color: rgb(40, 122, 189);
+    border-bottom: 3px solid black;
+}
+.input-texto::placeholder{
+    color: white;
+}
+.input-botao{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    background-color: rgb(40, 122, 189);
+    border: 1px solid black;
+    cursor: pointer;
+}
+.respostas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+.campo{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-bottom: 3px solid black;
+}
+.erro{
+    display: none;
+}
+.erro.ativo{
+    display: block;
+    margin-top: 20px;
+}
+
+.erro-texto{
+    color: white;
+    font-size: 20px;
+    background-color: black;
+}

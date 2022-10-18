@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>ConsultaCep</title>
+</head>
+<body>
+    <main>
+        <div class="conteudos">
+            <div class="titulo">
+                <h1>Consulta Cep</h1>
+            </div>
+            <div class="campoCep">
+                <form>
+                    <input type="text" id="cep" name="cep" class="input-texto" placeholder="Insira seu Cep">
+                    <input type="submit" class="input-botao" id="botao" value="Consultar" onclick="getcep()"> 
+                  </form> 
+            </div>
+            <div class="respostas">
+                <div class="campo">
+                    Rua:
+                    <span class="rua"></span>
+                </div>
+                <div class="campo">
+                    Bairro:
+                    <span class="bairro"></span>
+                </div>
+                <div class="campo">
+                    Cidade:
+                    <span class="cidade"></span>
+                </div>
+                <div class="campo">
+                    Estado:
+                    <span class="estado"></span>
+                </div>
+            </div>
+            <div class="erro">
+                <span class="erro-texto">ERRO! DIGITE SEU CEP NOVAMENTE</span>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!--JavaScript-->
+    <script src="script.js"></script>
+</body>
+</html>
